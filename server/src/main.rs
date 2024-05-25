@@ -1,7 +1,7 @@
 use axum::{http::StatusCode, response::IntoResponse, routing::get, Router};
 
 async fn teste() -> impl IntoResponse {
-    (StatusCode::OK, "works!").into_response()
+    (StatusCode::OK, "VERSION 2").into_response()
 }
 
 #[tokio::main]

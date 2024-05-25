@@ -5,6 +5,9 @@ services:
       context: ./server
       dockerfile: ./builder/Dockerfile
     # network_mode: host
+    deploy:
+      restart_policy:
+        condition: none
 
   server:
     # container_name: app

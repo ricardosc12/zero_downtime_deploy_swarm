@@ -29,11 +29,11 @@ _setup.sh_
 
 Cria as imagens necessárias para os serviços e executa o stack deploy para iniciar os mesmos.
 
-_test.sh_
-
-Pode ser utilizado para verificar a indisponibilidade durante o processo de deployment.
-
 _deploy.sh_
 
 Utilizado para atualizar o serviço específico em Rust, que é o processo no qual estamos testando. Neste script, devemos rebuildar a 
 imagem do serviço usando docker compose build _server_ e, em seguida, atualizar o serviço com esta imagem usando docker service update, lembrando de configurar novamente o healthcheck.
+
+_test.sh_
+
+Pode ser utilizado para verificar a indisponibilidade durante o processo de deployment.
